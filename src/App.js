@@ -3,7 +3,8 @@ import Home from "./components/Home";
 import Selection from "./components/Selection";
 import {BrowserRouter as Router, Routes, Route, useNavigate} from "react-router-dom"
 import Login from './login'; 
-
+import './App.css';
+import logo from './logo.svg';
 
 function App() {
   return (
