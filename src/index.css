@@ -1,1 +1,12 @@
 
+/* Prevent horizontal scrolling */
+html, body {
+    margin: 0;            /* Remove default margins */
+    padding: 0;           /* Remove default padding */
+    overflow-x: hidden;   /* Disable horizontal scroll */
+    height: 100%;         /* Ensure the height of the page fills the screen */
+  }
+div {
+    margin: 100px;
+}
+  
