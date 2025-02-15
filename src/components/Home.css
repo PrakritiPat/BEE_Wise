@@ -1,0 +1,78 @@
+
+
+
+@font-face {
+    font-family: "babygemoy";
+    src: url("../assets/fonts/baby-gemoy.regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+body {
+    background-color: #F5E5B2; /* Light honey background */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .background-container {
+    background-image: url("/public/background.png"); /* If in public folder */
+    background-size: cover; /* Makes sure it covers the screen */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; /* Full-screen background */
+  }
+  
+  /* Title Styling */
+  h1 {
+    font-family: 'babygemoy';
+    font-size: 80px;
+    color: #E98E27; /* Honey gold */
+    
+    margin-top: 100px;
+  }
+  
+  /* Subtitle / Description */
+  p {
+    font-size: 20px;
+    color: #E98E27;
+    font-weight: bold;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #E98E27; /* Honey orange */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 3px 0px #a8641b;
+    margin-bottom: 10px; /* Adds space between the buttons */
+
+  }
+  
+  button:hover {
+    background-color: #a8641b;
+    box-shadow: none;
+  }
+  
+  .button-container {
+    text-align: center;
+  display: flex;
+  flex-direction: column;  /* Stack buttons vertically */
+  align-items: center;     /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh;           /* Full height of the viewport */
+  margin-top: -250px
+  }
