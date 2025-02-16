@@ -13,7 +13,6 @@
   }
   
  
-  
   /* Title Styling */
   .title {
     font-family: "babygemoy";
@@ -26,27 +25,39 @@
   .hex-container {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
+    gap: 50px; /* Ensure spacing */
     margin-top: 40px;
   }
   
   /* Hexagon Shape */
   .hex {
-    width: 150px;
-    height: 170px;
+    display: flex; /* Ensure it's a block element */
+    flex-direction: column;
+  }
+
+  .hex {
+    width: 600px; /* Width of hexagon */
+    height: 300px; /* Adjusted height to maintain proportions */
     background-color: #E98E27;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(
+      50% 0%, 100% 25%, 100% 75%, 
+      50% 100%, 0% 75%, 0% 25%
+    ); /* Perfect hexagon shape */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
     transition: 0.3s;
   }
+  
+  
+  
   
   /* Hexagon Hover Effect */
   .hex:hover {
@@ -55,10 +66,11 @@
   
   /* Footer Text */
   .footer-text {
+    font-family: "babygemoy";
     margin-top: 40px;
     font-weight: bold;
     color: #d48a2f;
-    font-size: 18px;
+    font-size: 30px;
   }
   
   /* Next Button */
@@ -89,7 +101,7 @@
   }
   
 
-  button4 {
+  button {
     background-color: #E98E27; /* Honey gold */
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -103,11 +115,7 @@
     position: relative;
     display: inline-block;
     text-align: center;
-    
-    /* Hexagon Shape */
-    width: 120px;
-    height: 70px;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  
   }
   
   button4 img {
