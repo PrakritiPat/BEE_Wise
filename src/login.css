@@ -1,50 +1,121 @@
-/* Login.css */
+@font-face {
+  font-family: "babygemoy";
+  src: url("../assets/fonts/baby-gemoy.regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-.login-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    text-align: center;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  .error-message {
-    color: red;
-    text-align: center;
-    margin-bottom: 10px;
-  }
+body {
+  background-color: #F5E5B2; /* Light honey background */
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 5px;
+}
+
+.auth-left, .auth-right {
+  flex: 1;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-left {
+  background-color: #fffbe6;
+  color: #e58e26;
+  text-align: left;
+}
+
+.auth-right {
+  background-color: #e58e26;
+  color: white;
+  text-align: center;
+}
+
+.auth-right h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.auth-right p {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: 'babygemoy';
+  font-size: 50px;
+  color: #E98E27; /* Honey gold */
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+  color:#fffbe6;
+  font-weight: normal;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #e58e26;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  background: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Honey Drips Decoration */
+.auth-right:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-image: radial-gradient(circle, #c97a2a 15%, transparent 16%),
+                    radial-gradient(circle, #c97a2a 15%, transparent 16%),
+                    radial-gradient(circle, #c97a2a 15%, transparent 16%);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px, 30px 30px;
+}
