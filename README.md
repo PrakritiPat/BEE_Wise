@@ -1,6 +1,6 @@
 # Honey Tutoring
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+We created a website using HTML, CSS, and JS, along with React, that allows students at SCU to offer there services and tutor other students in classes that they have already taken.
 
 ## Available Scripts
 
