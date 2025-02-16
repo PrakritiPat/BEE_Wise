@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./tutor.css";
-import bearImage from "../assets/fonts/bear1.png"; // Import bear image
+import bear from "../assets/fonts/tutorBear.png"; 
 import ZoomButton from "./ZoomButton";
 
 const tutorData = {
@@ -13,7 +13,7 @@ const tutorData = {
   "CTW 1": ["Samia Ahmer", "Noah Walsh"],
   "STATS": ["Liv Morgan", "Emily Kind"],
   "COEN 79": ["Sarayu Unnam", "Grace Li"]
-};
+}; 
 
 const Tutors = () => {
   const { classname } = useParams();
@@ -42,7 +42,7 @@ const Tutors = () => {
       )}
       <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
       <ZoomButton />
-      <img src={bearImage} className="bear" /> 
+      <img src={bear} className="bear" /> 
 
     </div>
   );
