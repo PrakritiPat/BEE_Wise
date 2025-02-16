@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Profile from "./components/Profile";
 import Selection from "./components/Selection";
 import Searchclass from "./components/searchclass";
+import ZoomButton from "./components/ZoomButton";
 import {BrowserRouter as Router, Routes, Route, useNavigate} from "react-router-dom"
 //import {Routes, Route } from "react-router-dom";
 import Login from './login';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/searchclass" element={<Searchclass />} />
         <Route path="/tutors/:classname" element={<Tutors />} />
+        <Route path="/ZoomButtons" element={<ZoomButton />} />
 
         
       </Routes>
