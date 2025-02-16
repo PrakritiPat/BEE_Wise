@@ -15,12 +15,12 @@ function Login() {
 
   return (
     <div className= "background-container">
-       <div style={{ textAlign: "center", marginTop: "50px" }}>
-       <h1> Honey Tutoring</h1>
+       <div style={{ textAlign: "center"}}>
+       <h3> Honey Tutoring</h3>
       </div>  
       <div className="login-container">
         <div className="auth-left">
-        <h2>Log In</h2>
+        <h5>Log In</h5>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
           <label>USERNAME</label>
