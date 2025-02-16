@@ -2,22 +2,13 @@
 
 We created a sustainble tutoring website named BeeWise Tutoring using HTML, CSS, and JS, along with the React framework. This allows students at SCU to offer their knowledge and services based on classes they've taken and tutor other students. Each tutoring session fills up the user's honey jar in their profile section. Once the honey jar is filled up, it engages the student in sustainable living. SCU will donate a sum of money to tree organizations and plant trees to sustain bee environments around the globe. 
 
-## Available Scripts
+## App.js
 
-In the project directory, you can run:
+This file is what uses REACT to connect all of our pages and files together.
 
-### `npm start`
+### Home
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The home js and css files contain the code for the page where you can login or sign up.
 
 ### `npm run build`
 
