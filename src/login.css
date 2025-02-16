@@ -1,9 +1,12 @@
 @font-face {
-  font-family: "babygemoy";
-  src: url("../assets/fonts/baby-gemoy.regular.ttf") format("truetype");
+  
+  /*font-family: "babygemoy";
+  src: url("../assets/fonts/baby-gemoy.regular.ttf") format("truetype"); */
   font-weight: normal;
   font-style: normal;
+  
 }
+
 
 body {
   background-color: #F5E5B2; /* Light honey background */
