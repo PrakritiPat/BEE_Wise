@@ -8,7 +8,7 @@ const classes = [
   "MATH 14", "CTW 1", "STATS", "COEN 79"
 ];
 
-const Home = () => {
+const Searchclass = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
 
@@ -29,7 +29,11 @@ const Home = () => {
         {filteredClasses.map((c, index) => (
           <button
             key={index}
-            onClick={() => navigate(`/tutors/${c}`)}
+            onClick={() => {
+              console.log(`Navigating to /tutors/${c}`);
+              navigate(`/tutors/${c}`);
+            }}
+              /*navigate(`/tutors/${c}`)}*/
             className="hexagon"
           >
           <span>{c}</span>
@@ -41,4 +45,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Searchclass;
