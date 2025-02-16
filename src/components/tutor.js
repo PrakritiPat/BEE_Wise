@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./tutor.css";
+import ZoomButton from "./ZoomButton";
 
 const tutorData = {
   "COEN 12": ["Sarayu Unnam", "Layla Cotts"],
@@ -39,6 +40,7 @@ const Tutors = () => {
         <p>No tutors available for this class.</p>
       )}
       <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
+      <ZoomButton />
     </div>
   );
 };
