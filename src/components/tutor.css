@@ -1,55 +1,58 @@
 .tutor-container {
-    text-align: center;
-    padding: 20px;
-    background-color: #fdf3c5;
-    min-height: 100vh;
-  }
-  
-  .title {
-    font-size: 30px;
-    color: #E98E27;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .tutor-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .tutor-list li {
-    background-color: #e5a255;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    margin: 10px auto;
-    border-radius: 10px;
-    width: 50%;
-    font-size: 18px;
-    font-weight: 500;
-    text-align: center;
-    transition: 0.3s;
-    font-family: poppin, serif;
-    font-size: 25px;
-  }
-  
-  .tutor-list li:hover {
-    background-color: #F3D56F;
-    color: white;
-  }
-  
-  .back-button {
-    background-color: #E98E27;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: 0.3s;
-  }
-  
-  .back-button:hover {
-    background-color: #a8641b;
-  }
-  
+  text-align: center;
+  padding: 20px;
+  background-color: #fdf3c5;
+  min-height: 100vh;
+}
+ .title {
+  font-size: 30px;
+  color: #E98E27;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+ .tutor-list {
+  list-style-type: none;
+  padding: 0;
+}
+ .tutor-list li {
+  background-color: #e5a255;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 50%;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  transition: 0.3s;
+  font-family: poppin, serif;
+  font-size: 25px;
+}
+ .tutor-list li:hover {
+  background-color: #F3D56F;
+  color: white;
+}
+ .back-button {
+  background-color: #E98E27;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+ .back-button:hover {
+  background-color: #a8641b;
+}
+
+
+.bear {
+  position: fixed;  /* Ensures the bear is positioned relative to the whole screen */
+  left: 20%; /* Moves it more to the center */
+  bottom: -15%; /* Adjust height placement */
+  width: 400px; /* Adjust size as needed */
+  height: auto;
+  z-index: 10; /* Ensures it appears above other elements */
+}
