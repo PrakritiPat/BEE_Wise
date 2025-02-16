@@ -1,44 +1,39 @@
 import React, { useState } from 'react';
 import './login.css';
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  let navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // // Basic validation
-    // if (!email || !password) {
-    //   setErrorMessage('Both email and password are required');
-    //   return;
-    // }
-
-    // Perform login logic (e.g., make an API request)
     console.log('Logging in with', { email, password });
-    // Reset fields and error message after submit
     setEmail('');
     setPassword('');
-   // setErrorMessage('');
-
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Email</label>
+    <div className= "background-container">
+       <div style={{ textAlign: "center", marginTop: "50px" }}>
+       <h1> Honey Tutoring</h1>
+      </div>  
+      <div className="login-container">
+        <div className="auth-left">
+        <h2>Log In</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+          <label>USERNAME</label>
           <input
-            type="email"
+            type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email"
+            placeholder="Enter your username"
             required
           />
-        </div>
+          </div>
         <div className="form-group">
-          <label>Password</label>
+          <label>PASSWORD</label>
           <input
             type="password"
             value={password}
@@ -47,9 +42,17 @@ function Login() {
             required
           />
         </div>
-        {/* {errorMessage && <div className="error-message">{errorMessage}</div>} */}
-        <button type="submit">Login</button>
+        <button type="submit" className="login-btn">Log in!</button>
       </form>
+    </div>
+    <div className="auth-right">
+      <h2>Don't have an account?</h2>
+      <br>
+      </br>
+      <p> No worries! Join the family:</p>
+      <button onClick={() => navigate("/Selection")} className="signup-btn">Sign Up</button>
+    </div>
+    </div>
     </div>
   );
 }
