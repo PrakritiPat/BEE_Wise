@@ -46,7 +46,7 @@ body {
   }
   
   /* Button Styling */
-  button {
+  button5 {
     background-color: #E98E27; /* Honey orange */
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -63,7 +63,7 @@ body {
 
   }
   
-  button:hover {
+  button5:hover {
     background-color: #a8641b;
     box-shadow: none;
   }
