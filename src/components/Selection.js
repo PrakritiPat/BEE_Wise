@@ -4,6 +4,8 @@ import "./Selection.css";
 
 
 function Selection() {
+  let navigate = useNavigate();
+  
   return (
     <div>
      
@@ -20,7 +22,9 @@ function Selection() {
 
       <p className="footer-text">YOU CAN DO BOTH</p>
 
-      <button className="next-btn">Next</button>
+      <button className="button55" onClick={() => navigate("/Searchclass")}>Next</button>
+
+
     </div>
   );
 }
