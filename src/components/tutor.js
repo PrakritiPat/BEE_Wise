@@ -5,28 +5,48 @@ import bear from "../assets/fonts/tutorBear.png";
 import ZoomButton from "./ZoomButton";
 
 const tutorData = {
-  "COEN 12": ["Sarayu Unnam", "Layla Cotts"],
-  "MATH 12": ["Sarayu Unnam", "John Dole"],
-  "PHYSICS 33": ["Prakriti Patnaik", "Samia Ahmer"],
-  "COEN 20": ["Aanav Patel", "Henry Golden"],
-  "MATH 14": ["Sarayu Unnam", "Liv Morgan"],
-  "CTW 1": ["Samia Ahmer", "Noah Walsh"],
-  "STATS": ["Liv Morgan", "Emily Kind"],
-  "COEN 79": ["Sarayu Unnam", "Grace Li"]
-}; 
+  "COEN 12": [
+    { name: "Sarayu Unnam", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+    { name: "Layla Cotts", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+  ],
+  "MATH 12": [
+    { name: "Sarayu Unnam", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+    { name: "John Dole", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+  ],
+  "PHYSICS 33": [
+    { name: "Prakriti Patnaik", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+    { name: "Samia Ahmer", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+  ],
+  "COEN 20": [
+    { name: "Aanav Patel", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+    { name: "Samia Ahmer", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+  ],
+  "MATH 14": [
+    { name: "Sarayu Unnam", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+    { name: "Liv Morgan", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+  ],
+  "CTW 1": [
+    { name: "Aanav Patel", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+    { name: "Samia Ahmer", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+  ],
+  "STATS": [
+    { name: "Liv Morgan", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+    { name: "Emily Kind", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+  ],
+  "COEN 79": [
+    { name: "Sarayu Unnam", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+    { name: "Grace Li", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+  ]
+};
 
 const Tutors = () => {
   const { classname } = useParams();
-  console.log(`Received classname: ${classname}`);
   const navigate = useNavigate();
-  /*const tutors = tutorData[classname] || [];*/
-
   const tutors = tutorData[classname.toUpperCase()] || [];
 
-
-
-  /*console.log("Classname from URL:", classname); // Debug log
-  console.log('Tutors for this class:', tutors); */
+  const handleClick = (zoomLink) => {
+    window.open(zoomLink, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <div className="tutor-container">
@@ -34,16 +54,24 @@ const Tutors = () => {
       {tutors.length > 0 ? (
         <ul className="tutor-list">
           {tutors.map((tutor, index) => (
-            <li key={index}>{tutor}</li>
+            <li
+              key={index}
+              className="tutor-item"
+              onClick={() => handleClick(tutor.zoomLink)}
+            >
+              {tutor.name}
+            </li>
           ))}
         </ul>
       ) : (
         <p>No tutors available for this class.</p>
       )}
+
       <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
       <ZoomButton />
       <img src={bear} className="bear" /> 
 
+      <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
     </div>
   );
 };
