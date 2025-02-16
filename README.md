@@ -12,52 +12,22 @@ This file is what uses REACT to connect all of our pages and files together.
 
 The home js and css files contain the code for the page where you can login or sign up.
 
-### `npm run build`
+### Login
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The login js and css files contain the code for creating an account and saving your information. You will then be guided to the selection page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Selection
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In this page you can select whether you would like to be a tutor or need to be tutored. The code for these are in the selection js and css files.
 
-### `npm run eject`
+### Search Classes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The search classes js and css files hold the code for selecting which classes you would like to tutor or need to be tutored for. This will then guide you to the page with currently available tutors.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Available Tutors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+After selecting a class you will be able to see the available tutors for that class. If the tutor is available, after clicking on their name it will send you to a zoom link. If not, then it will link to their profile. The code for this is in the tutors js and css files.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Compiling
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+These files were all connected using REACT in App.js. Packages were updated and stored in the package json files.
