@@ -8,7 +8,7 @@ function Selection() {
   return (
 
     <div>
-      <h1 className="title3">BEEWISE TUTORING</h1>
+      <h1 className="title3">BEE WISE TUTORING</h1>
 
       {/* Wrap hexagons inside a container */}
       <div className="hex-container">

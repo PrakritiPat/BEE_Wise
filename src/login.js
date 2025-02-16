@@ -16,7 +16,7 @@ function Login() {
   return (
     <div className= "background-container">
        <div style={{ textAlign: "center"}}>
-       <h3> BEEWISE Tutoring</h3>
+       <h3> BEE WISE Tutoring</h3>
       </div>  
       <div className="login-container">
         <div className="auth-left">
@@ -47,7 +47,7 @@ function Login() {
     </div>
     <div className="auth-right">
       <h2>Don't have an account? </h2>
-      <h7>No worries! Join the family:</h7>
+      <h7> ‎ ‎  </h7>
       <button onClick={() => navigate("/Selection")} className="signup-btn">Sign Up</button>
     </div>
     </div>

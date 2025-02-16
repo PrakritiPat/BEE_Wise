@@ -1,109 +1,222 @@
 
-@font-face {
-  font-family: "babygemoy";
-  src: url("../assets/fonts/baby-gemoy.regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html, body {
-  width: 100%;
-  height: 100%;
+  height: 100%; /* Make sure the page takes full height */
+  margin: 0;    /* Remove default margin */
+  padding: 0;   /* Remove default padding */
 }
-
-body {
-  background-color: #FFF2CE; /* Solid honey color */
-  font-family: sans-serif;
-}
-
-/* Main Container */
 .profile-container {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
+  max-width: 500px;
+  margin-top: auto;
+  display: flex; /* Use Flexbox */
+  flex-direction: row; /* Arrange items in a row */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: flex-start; /* Align items to the left */
+  position: relative;  /* Adjust positioning to allow scrolling */
+  top: 0;    
+  margin-top: -250px;   
+  margin-left: -360px;       /* Align to the top of the page */
+  left: 0;             /* Align to the left of the page */
+  z-index: 10;
+  display: flex; /* Ensure the profile container uses flexbox */
+  flex-direction: row; /* Layout items in a row (side by side) */
+  align-items: center;
+  gap: 20px; /* Adds space between elements */
+
 }
 
-.main-title {
-  font-family: "babygemoy", sans-serif;
-  font-size: 60px;
-  color: #E98E27;
-  margin-left: 40px; /* Align to the left */
+/* Circle Container */
+.circlecontainer {
+  display: flex;
+  justify-content: flex-start; /* Align circle to the left */
+  align-items: center; /* Center the circle vertically */
+  margin-right: -150px; /* Add space between circle and profile info */
 }
 
-.tutor {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-family: "babygemoy", sans-serif;
+/* Circle Style */
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #e98e27; /* Circle color */
+  border-radius: 50%; /* Makes the div a circle */
+}
+
+.ps{
+  flex-direction: column; /* Layout items in a row (side by side) */
+  margin-left:-30px;
+
+}
+.p{
+  white-space: nowrap;
+  color: #c06e11;
+  font-family: 'babygemoy',serif;
+  font-size:20px;
+  margin-bottom: -5%;
+  margin-top: 27%;
+
+}
+
+.p1{
+  margin-top: 5%;
+  white-space: nowrap;
+  color: #c06e11;
+  font-family: 'babygemoy',serif;
+  font-size:20px;
+
+
+}
+.class-taken {
+  margin-top: -15%; /* Adds space between profile content and 'Classes Taken' */
+  text-align: left;
+  margin-right: -7%;
+}
+
+.ct{
+  font-family: 'babygemoy',serif;
+  font-size:40px;
+  color: #e98e27;
+  margin-top: -150px;
+  margin-left: -20%;
+}
+
+/* Profile Info */
+.profile-info {
+  display: flex;
+  flex-direction: column; /* Stack profile info vertically */
+  align-items: flex-start; /* Align to the left */
+  align-items: center;
+  flex-direction: row; /* Keep profile name and details on the same line */
+}
+
+/* Profile Info Title (optional for custom styling) */
+.profile-info h2 {
+  font-family: 'babygemoy', sans-serif;
   font-size: 40px;
-  color: #E98E27;
+  margin: 0;
+  color: #e98e27;
+  white-space: nowrap;
 }
 
-/* Profile Section */
-.profile-section {
-  margin-top: 50px;
-  margin-left: 50px;
-  color: #E98E27;
+.profile-info p {
+  font-family: 'poppin', sans-serif;
+  font-size: 18px;
+  margin: 5px 0; /* Add some spacing between the paragraphs */
+  color: black;
+
 }
 
-/* Profile Header with Image */
-.profile-header {
+/* Hexagon grid layout */
+/* Hexagon grid layout */
+.hex1-grid {
+  display: flex; /* Use flexbox to arrange hexagons */
+  justify-content: flex-start;
+  margin-left:-20%; /* Align items to the left */
+  gap: 1px; /* Increases space between hexagons (you can adjust the value) */
+  flex-wrap: wrap; /* Allow hexagons to wrap if they overflow */
+  margin-top: 20px;
+  max-width: 2000px;
+  grid-template-columns: repeat(8, 18em); /* 5 hexagons per row */
+  grid-template-rows: repeat(0, 18em); /* Adjust rows to fit the height of hexagons */
+}
+
+.hexagons {
+  margin-right: 0%;
+  margin-top: -5%;
+}
+
+/* Hexagon styling */
+.hexago {
+  position: relative;
+  width: 10em;  /* Adjust the size of the hexagon */
+  height: 10em;
+  background-color: #F6AF54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: background-color 0.3s ease-in-out;
+  font-family: 'Poppin', serif;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  margin: 10px;  /* Optional: Adds additional space around individual hexagons */
+}
+
+/* SAMIA */
+.start {
+  background-color: #E98E27; /* Honey orange */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 40px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 3px 3px 0px #a8641b;
+  margin-bottom: 10px; /* Adds space between the buttons */
+}
+
+.start:hover {
+  background-color: #a8641b;
+  box-shadow: none;
+}
+
+.container2 {
   display: flex;
   align-items: center;
-  gap: 15px; /* Space between the circle and text */
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 12%;
+  margin-right: 30%;
+  gap: -200px;
 }
 
-.profile-image {
-  width: 60px;
-  height: 60px;
-  background-color: #E98E27; /* Orange theme */
-  border-radius: 50%;
+.image-container1 {
+  flex: 1;
+  text-align: right;
+  padding-left: -20px;
 }
 
-.profile-name {
-  font-family: "babygemoy", sans-serif;
-  font-size: 40px;
-  margin-bottom: 10px;
+#myImage {
+  max-width: 100%;
+  max-height: 80vh; /* Keep the image within 80% of the viewport height */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
 }
 
-.major-grade {
-  font-size: 18px;
+.text-container1 {
+  margin-top: 7%;
+  padding: 20 px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18 px;
+  text-align: center;
+}
+
+.smt {
+  font-size: 20px;
+  color: #E98E27;
+  font-weight: normal;
+  max-width: 900px;
+  margin-left: 0 ;
+  line-height: 1.6;
+}
+
+h2 {
+  font-family: 'babygemoy';
+  font-size: 50px;
+  color: #E98E27; /* Honey gold */
+  margin-top: -90px;
+}
+
+.congrats-message {
+  background-color: #fffae6; /* Light yellow */
+  color: #d48806; /* Dark honey */
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 20px;
-  line-height: 1.4;
-}
-
-.classes-taken {
-  font-family: "babygemoy", sans-serif;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .main-title {
-    font-size: 40px;
-  }
-  .tutor {
-    font-size: 30px;
-    top: 10px;
-  }
-  .profile-name,
-  .classes-taken {
-    font-size: 30px;
-  }
-  .major-grade {
-    font-size: 16px;
-  }
-  .profile-section {
-    margin-top: 40px;
-    margin-left: 20px;
-  }
+  
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+  
 }
