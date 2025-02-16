@@ -1,29 +1,27 @@
 import React from "react";
-import {useNavigate} from "react-router-dom";
 import "./Selection.css";
 
-
 function Selection() {
+  let navigate = useNavigate();
+  
   return (
+
     <div>
-     
       <h1 className="title">HONEY TUTORING</h1>
 
-      <div className="container1">
-        <button4>I can tutor!</button4>
-      <button4>I need a tutor!</button4>
-   
-      
-
-
+      {/* Wrap hexagons inside a container */}
+      <div className="hex-container">
+        <div className="hex"><span>I can tutor!</span></div>
+        <div className="hex"><span>I need a tutor!</span></div>
       </div>
 
       <p className="footer-text">YOU CAN DO BOTH</p>
 
-      <button className="next-btn">Next</button>
+      <button className="button55" onClick={() => navigate("/Searchclass")}>Next</button>
+
+
     </div>
   );
 }
 
 export default Selection;
-
