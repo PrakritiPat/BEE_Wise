@@ -9,7 +9,7 @@ const Home = () => {
     <div className="background-container">
       <div style={{ textAlign: "center", marginTop: "50px" }}>
         <div class="text-container">
-          <h1>BEEWISE TUTORING</h1>
+          <h1>BEE WISE TUTORING</h1>
           <p>
             Empowering students, sustaining the future. We provide resources and
             support to help students thrive while promoting sustainable practices
