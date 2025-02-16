@@ -1,0 +1,63 @@
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fdf3c5;
+}
+
+.search-bar {
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #E98E27;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: #F3D56F;
+  color: rgba(180, 65, 19, 0.863);
+}
+
+.custom-search-bar:focus {
+  outline: none;
+  border-color: #c86c10; /* Darker teal border on focus */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on focus */
+}
+
+.hexagon {
+  position: relative;
+  width: 15.5em;
+  height: 17em;
+  background-color: #F6AF54;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: background-color 0.3s ease-in-out;
+  margin-left: -200px;
+  font-family: 'Poppin', serif;
+  font-size: 1rem;
+}
+
+.hexagon:hover {
+  background-color: #E98E27; /* Change color on hover */
+  color: #F6AF54;
+}
+
+.hexagon span {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+}
+
+.hex-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 18em); /* 5 hexagons per row */
+  grid-template-rows: repeat(4, 18em); /* Adjust rows to fit the height of hexagons */
+  gap: 1em;
+  justify-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.hex-grid .hexagon:nth-child(odd) {
+  margin-top: 4em; /* Stagger the odd rows */
+}

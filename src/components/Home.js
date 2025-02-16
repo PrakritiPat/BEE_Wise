@@ -21,6 +21,7 @@ and the planet more sustainable, one step at a time.</p>
 <div className = "button-container">
 <button5 onClick={() => navigate("/Login")}>Login</button5>
 <button5 onClick={() => navigate("/Selection")}>SignUp</button5>
+
 </div>
 
 
