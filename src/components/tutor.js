@@ -6,7 +6,7 @@ import ZoomButton from "./ZoomButton";
 
 const tutorData = {
   "COEN 12": [
-    { name: "Sarayu Unnam", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+    { name: "Sarayu Unnam", zoomLink: "https://zoom.us/j/your_meeting_id1" }, 
     { name: "Layla Cotts", zoomLink: "https://zoom.us/j/your_meeting_id1" },
   ],
   "MATH 12": [
@@ -14,7 +14,7 @@ const tutorData = {
     { name: "John Dole", zoomLink: "https://zoom.us/j/your_meeting_id1" },
   ],
   "PHYSICS 33": [
-    { name: "Prakriti Patnaik", zoomLink: "https://zoom.us/j/your_meeting_id1" },
+    { name: "Prakriti Patnaik", zoomLink: "/profile" }, // Changed to Profile.js page
     { name: "Samia Ahmer", zoomLink: "https://zoom.us/j/your_meeting_id1" },
   ],
   "COEN 20": [
@@ -45,7 +45,11 @@ const Tutors = () => {
   const tutors = tutorData[classname.toUpperCase()] || [];
 
   const handleClick = (zoomLink) => {
-    window.open(zoomLink, "_blank", "noopener,noreferrer");
+    if (zoomLink.startsWith("/")) {
+      navigate(zoomLink); // Navigate to Profile.js page
+    } else {
+      window.open(zoomLink, "_blank", "noopener,noreferrer"); // Open Zoom link
+    }
   };
 
   return (
@@ -68,7 +72,7 @@ const Tutors = () => {
       )}
 
       <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
-      <img src={bear} className="bear" /> 
+      <img src={bear} className="bear" alt="Tutor Bear" />
 
     </div>
   );
