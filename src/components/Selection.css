@@ -13,7 +13,6 @@
   }
   
  
-  
   /* Title Styling */
   .title {
     font-family: "babygemoy";
@@ -26,28 +25,33 @@
   .hex-container {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Adjust spacing */
-    flex-wrap: wrap; /* Ensures hexagons stay aligned if screen is small */
+    align-items: center;
+    gap: 50px; /* Ensure spacing */
     margin-top: 40px;
   }
   
   /* Hexagon Shape */
   .hex {
-    width: 300px;
-    height: 300px;  /* Reduce height slightly to maintain proportions */
+    display: flex; /* Ensure it's a block element */
+    flex-direction: column;
+  }
+
+  .hex {
+    width: 600px; /* Width of hexagon */
+    height: 300px; /* Adjusted height to maintain proportions */
     background-color: #E98E27;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    
+    clip-path: polygon(
+      50% 0%, 100% 25%, 100% 75%, 
+      50% 100%, 0% 75%, 0% 25%
+    ); /* Perfect hexagon shape */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
-    font-size: 18px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
-    padding: 10px; /* Reduce padding to prevent distortion */
-    
+    padding: 10px;
     cursor: pointer;
     transition: 0.3s;
   }
@@ -60,10 +64,11 @@
   
   /* Footer Text */
   .footer-text {
+    font-family: "babygemoy";
     margin-top: 40px;
     font-weight: bold;
     color: #d48a2f;
-    font-size: 18px;
+    font-size: 30px;
   }
   
   
@@ -97,7 +102,7 @@
   }
   
 
-  button4 {
+  button {
     background-color: #E98E27; /* Honey gold */
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -111,11 +116,7 @@
     position: relative;
     display: inline-block;
     text-align: center;
-    
-    /* Hexagon Shape */
-    width: 120px;
-    height: 70px;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  
   }
   
   button4 img {
