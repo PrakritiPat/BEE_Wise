@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./tutor.css";
-import bearImage from "../assets/fonts/bear1.png"; // Import bear image
+import bear from "../assets/fonts/tutorBear.png"; 
 import ZoomButton from "./ZoomButton";
 
 const tutorData = {
@@ -66,6 +66,10 @@ const Tutors = () => {
       ) : (
         <p>No tutors available for this class.</p>
       )}
+
+      <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
+      <ZoomButton />
+      <img src={bear} className="bear" /> 
 
       <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
     </div>

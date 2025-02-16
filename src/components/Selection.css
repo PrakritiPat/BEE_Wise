@@ -11,12 +11,11 @@
     text-align: center;
    
   }
-  
  
   /* Title Styling */
   .title {
     font-family: "babygemoy";
-    font-size: 50px;
+    font-size: 200px;
     color: #E98E27;
     margin-top: 10px;
   }
@@ -37,13 +36,11 @@
   }
 
   .hex {
-    width: 600px; /* Width of hexagon */
-    height: 300px; /* Adjusted height to maintain proportions */
+    position: relative;
+    width: 450px; /* Width of hexagon */
+    height: 450px; /* Adjusted height to maintain proportions */
     background-color: #E98E27;
-    clip-path: polygon(
-      50% 0%, 100% 25%, 100% 75%, 
-      50% 100%, 0% 75%, 0% 25%
-    ); /* Perfect hexagon shape */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,15 +48,15 @@
     font-size: 40px;
     font-weight: bold;
     color: white;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+
   }
-  
-  
-  /* Hexagon Hover Effect */
+
   .hex:hover {
     background-color: #a8641b;
+  }
+
+  .hex {
+    flex: 0 0 auto;
   }
   
   /* Footer Text */
