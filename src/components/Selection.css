@@ -69,6 +69,7 @@
     font-weight: bold;
     color: #d48a2f;
     font-size: 30px;
+    margin-top: -10%;
   }
   
   
@@ -85,7 +86,8 @@
     cursor: pointer;
     transition: 0.3s ease-in-out;
     box-shadow: 3px 3px 0px #a8641b;
-    margin-bottom: 10px; /* Adds space between the buttons */
+    margin-top: -10%;
+    
   }
   
   .button55:hover {
