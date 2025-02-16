@@ -15,17 +15,20 @@ body {
   height: 100vh; /* Full height of the viewport */
   width: 100vw;
   padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  }
+  margin: 0; 
+  overflow-x: hidden; 
+  overflow-y: hidden; 
+}
 
   .background-container {
+    position: relative;  /* Ensures child elements position correctly */
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    width: 100vw; /* Ensures full width */
-    height: 100vh; /* Ensures full height */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,11 +42,12 @@ body {
   text-align: center;
   width: 100%;
   max-width: 900px; /* Prevents text from stretching */
-  margin-left: -30%; 
+  margin-left: -25%; 
   margin-top: -10%;
-  padding: 20px;
+  padding: 10px;
 }
-  
+
+
 h1 {
   font-family: 'babygemoy';
   font-size: 80px;
@@ -65,7 +69,7 @@ p {
 }
   
   /* Button Styling */
-  button-five {
+button-five {
     background-color: #E98E27; /* Honey orange */
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -88,12 +92,22 @@ p {
   }
   
   .button-container {
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -60%; 
+    flex-direction: column;  /* Keeps buttons stacked */
+    align-items: center;  /* Centers buttons within the container */
     justify-content: center;
+    width: 100%; /* Ensure full width */
+    max-width: 300px; /* Restrict width so buttons stay centered */
+    margin-left: 60px; /* Centers the button container */
+}
+
+
+  .bear-image {
+    position: absolute;  /* Position bear independently */
+    left: -100px;  /* Moves bear to the left */
+    bottom: -80px; /* Adjusts height if needed */
+    width: 450px; /* Adjust size */
     height: auto;
-    margin-top: 1px; 
-  }
+}
+
+
