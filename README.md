@@ -1,8 +1,10 @@
 # Honey Tutoring
 
-We created a sustainble tutoring website named BeeWise Tutoring using HTML, CSS, and JS, along with the React framework. This allows students at SCU to offer their knowledge and services based on classes they've taken and tutor other students. Each tutoring session fills up the user's honey jar in their profile section. Once the honey jar is filled up, it engages the student in sustainable living. SCU will donate a sum of money to tree organizations and plant trees to sustain bee environments around the globe. 
+We created a sustainable tutoring website named BeeWise Tutoring using HTML, CSS, and JS, along with the React framework. This allows students at SCU to offer their knowledge and services based on classes they've taken and tutor other students. Each tutoring session fills up the user's honey jar in their profile section. Once the honey jar is filled up, it engages the student in sustainable living. SCU will donate a sum of money to tree organizations and plant trees to sustain bee environments around the globe. 
 
-## App.js
+## FILES
+
+### App.js
 
 This file is what uses REACT to connect all of our pages and files together.
 
