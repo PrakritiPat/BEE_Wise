@@ -1,50 +1,184 @@
-/* Login.css */
+/* @font-face {
+  font-family: "babygemoy";
+  src: url("../assets/fonts/baby-gemoy.regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+} */
 
-.login-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+body {
+  background-color: #F5E5B2; /* Light honey background */
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* full container that holds login/signup sections */
+.auth-container {
+  display: flex;
+  background-color: #FFF7DD; /* Light cream background */
+  border-radius: 20px; /* Rounded edges */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 60%;
+  max-width: 900px; /* Limits maximum size */
+  overflow: hidden; /* Prevents content overflow */
+}
+
+/* login part on the left */
+.auth-left {
+  flex: 1;
+  background-color: #F5F1D9; /* left cream part */
+  color: #E98E27; /* Orange text */
+  padding: 40px;
+  text-align: left; /* Aligns form text to the left */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers text vertically */
+  align-items: center; /* Centers text horizontally */
+  position: relative;
+}
+
+/* signup part on the right */
+.auth-right {
+  flex: 1;
+  background-color: #E98E27; /* Honey gold background */
+  color: white; /* White text */
+  padding: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers text vertically */
+  align-items: center; /* Centers text horizontally */
+  position: relative;
+}
+
+/* dripping design */
+.auth-right::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to bottom, #E98E27, #c7761f);
+  border-bottom-right-radius: 20px;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+h1 {
+  font-family: 'babygemoy';
+  font-size: 50px;
+  color: #E98E27; /* Honey gold */
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #E98E27; /* Honey theme */
+}
+
+p {
+  font-size: 18px;
+  color: #E98E27;
+  font-weight: bold;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #E98E27;
+  display: block; /* Places label above the input */
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px; /* Soft rounded edges */
+  border: 2px solid #E98E27; /* Honey orange border */
+  background-color: #FFF7DD; /* Light cream background */
+  font-size: 16px;
+}
+
+/* sign up button !! */
+.signup-btn {
+  background-color: #E98E27; /* Honey orange */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 3px 3px 0px #a8641b; /* Subtle 3D effect */
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+}
+
+/* hover effect for signup */
+.signup-btn:hover {
+  background-color: #a8641b;
+  box-shadow: none;
+}
+
+/* login button !! */
+.login-btn {
+  background-color: transparent; /* No fill */
+  border: 2px solid white; /* White border */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+}
+
+/* hover effect for login */
+.login-btn:hover {
+  background-color: white;
+  color: #E98E27; /* Changes to honey gold */
+}
+
+.auth-right h2 {
+  margin-bottom: 10px;
+}
+
+.auth-right p {
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+      flex-direction: column; /* Stacks login and signup sections vertically */
+      width: 90%;
   }
-  
-  h2 {
-    text-align: center;
+
+  /* Adjusts the right-side section for smaller screens */
+  .auth-right {
+      border-radius: 0;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
   }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  .error-message {
-    color: red;
-    text-align: center;
-    margin-bottom: 10px;
-  }
+}
