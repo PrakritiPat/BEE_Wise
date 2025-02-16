@@ -68,10 +68,8 @@ const Tutors = () => {
       )}
 
       <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
-      <ZoomButton />
       <img src={bear} className="bear" /> 
 
-      <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
     </div>
   );
 };
