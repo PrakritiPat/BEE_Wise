@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./components/Home";
-import Profile from "./components/profile";
+import Profile from "./components/Profile";
 import Selection from "./components/Selection";
 import Searchclass from "./components/searchclass";
 import ZoomButton from "./components/ZoomButton";
