@@ -45,8 +45,15 @@
 .auth-right h2 {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: -2%;
+  margin-bottom: 2%;
 }
+
+.auth-right h7 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
 
 .auth-right p {
   margin-bottom: 5%;
@@ -67,18 +74,13 @@ h3 {
   margin-bottom: -50%;
 }
 
-p {
-  font-size: 18px;
-  color:#fffbe6;
-  font-weight: normal;
-  z-index: 999;
-}
 
 .form-group label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
+
 
 input {
   width: 100%;
@@ -108,12 +110,13 @@ input {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  background-color: #F6AF54
+  background-color: #F6AF54;
+  margin-top: 2%;
 }
 
 .login-container {
   margin-top: 0%;
-  margin-left: -2%;
+  margin-left: -1%;
 }
 
 

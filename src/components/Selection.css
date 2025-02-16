@@ -13,9 +13,9 @@
   }
  
   /* Title Styling */
-  .title {
+  .title3 {
     font-family: "babygemoy";
-    font-size: 200px;
+    font-size: 70px;
     color: #E98E27;
     margin-top: 10px;
   }
@@ -37,8 +37,8 @@
 
   .hex {
     position: relative;
-    width: 450px; /* Width of hexagon */
-    height: 450px; /* Adjusted height to maintain proportions */
+    width: 450px; 
+    height: 450px; 
     background-color: #E98E27;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     display: flex;
@@ -48,6 +48,8 @@
     font-size: 40px;
     font-weight: bold;
     color: white;
+    border: none;
+    outline: none;
 
   }
 
@@ -58,39 +60,8 @@
   .hex {
     flex: 0 0 auto;
   }
-  
-  /* Footer Text */
-  .footer-text {
-    font-family: "babygemoy";
-    margin-top: 40px;
-    font-weight: bold;
-    color: #d48a2f;
-    font-size: 30px;
-    margin-top: -10%;
-  }
-  
-  
-  .button55 {
-    background-color: #E98E27; /* Honey orange */
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
-    padding: 15px 40px;
-    margin: 15px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    box-shadow: 3px 3px 0px #a8641b;
-    margin-top: -10%;
-    
-  }
-  
-  .button55:hover {
-    background-color: #a8641b;
-  }
-  
+
+
   /* Responsive Design */
   @media (max-width: 768px) {
     .hex-container {
@@ -100,32 +71,3 @@
     }
   }
   
-
-  button {
-    background-color: #E98E27; /* Honey gold */
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    padding: 15px 40px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    box-shadow: 3px 3px 0px #a8641b;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-  
-  }
-  
-  button4 img {
-    width: 100px; /* Set the width of the image */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-
-  .image-button img {
-    width: 100px; /* Adjust size */
-    height: auto;
-    display: block;
-}
