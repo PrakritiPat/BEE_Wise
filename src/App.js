@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./components/Home";
-import Selection from "./components/Selection";
+import Profile from "./components/Profile";
 import Searchclass from "./components/searchclass";
 import {BrowserRouter as Router, Routes, Route, useNavigate} from "react-router-dom"
 //import {Routes, Route } from "react-router-dom";
@@ -14,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Selection" element={<Selection />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/searchclass" element={<Searchclass />} />
 
         

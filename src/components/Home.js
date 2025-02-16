@@ -23,6 +23,7 @@ const Home = () => {
         <div className="button-container">
           <button-five onClick={() => navigate("/Login")}>Login</button-five>
           <button-five onClick={() => navigate("/Selection")}>Sign Up</button-five>
+          <button5 onClick={() => navigate("/Profile")}>Profile</button5>
         </div>
       </div>
     </div>
