@@ -2,7 +2,10 @@ import React from "react";
 import "./Selection.css";
 
 function Selection() {
+  let navigate = useNavigate();
+  
   return (
+
     <div>
       <h1 className="title">HONEY TUTORING</h1>
 
@@ -14,7 +17,9 @@ function Selection() {
 
       <p className="footer-text">YOU CAN DO BOTH</p>
 
-      <button className="next-btn">Next</button>
+      <button className="button55" onClick={() => navigate("/Searchclass")}>Next</button>
+
+
     </div>
   );
 }
