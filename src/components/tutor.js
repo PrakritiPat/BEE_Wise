@@ -40,7 +40,7 @@ const Tutors = () => {
         <p>No tutors available for this class.</p>
       )}
       <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
-      <img src={bearImage} className="bear" />
+      <img src={bearImage} className="bear" /> 
 
     </div>
   );
