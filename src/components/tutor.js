@@ -1,13 +1,14 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./tutor.css";
+import bearImage from "../assets/fonts/bear1.png"; // Import bear image
 
 const tutorData = {
   "COEN 12": ["Sarayu Unnam", "Layla Cotts"],
   "MATH 12": ["Sarayu Unnam", "John Dole"],
   "PHYSICS 33": ["Prakriti Patnaik", "Samia Ahmer"],
   "COEN 20": ["Aanav Patel", "Henry Golden"],
-  "MATH 14": ["Sarayu unnam", "Liv Morgan"],
+  "MATH 14": ["Sarayu Unnam", "Liv Morgan"],
   "CTW 1": ["Samia Ahmer", "Noah Walsh"],
   "STATS": ["Liv Morgan", "Emily Kind"],
   "COEN 79": ["Sarayu Unnam", "Grace Li"]
@@ -39,6 +40,8 @@ const Tutors = () => {
         <p>No tutors available for this class.</p>
       )}
       <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
+      <img src={bearImage} className="bear" />
+
     </div>
   );
 };
