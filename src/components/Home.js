@@ -15,8 +15,8 @@ and support to help students thrive while promoting sustainable
 practices that create a better tomorrow. Join us in making education 
 and the planet more sustainable, one step at a time.</p>
 <div className = "button-container">
-<button onClick={() => navigate("/Selection")}>Login</button>
-<button onClick={() => navigate("/Login")}>SignUp</button>
+<button5 onClick={() => navigate("/Login")}>Login</button5>
+<button5 onClick={() => navigate("/Selection")}>SignUp</button5>
 </div>
 
 
